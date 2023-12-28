@@ -31,24 +31,21 @@ function App() {
       </div>
 
     <div>
-    {show === false ? <h2>Select a planet</h2> : (
-      <div>
-        <h2>{planetsData[show].name}</h2>
-        <h4>{planetsData[show].title}</h4>
-        <p>{planetsData[show].description}</p>
-        <p>Distance from the Sun: {planetsData[show].distanceFromSun}</p>
-        <p>Diameter: {planetsData[show].diameter}</p>
-        <p>Gravity: {planetsData[show].gravity}</p>
-        <img src={planetsData[show].image} width='300px' height='300px' alt={planetsData[show].description} />  
+      {show === false ? <h2>Select a planet</h2> : (
+        <div>
+          <h2>{planetsData[show].name}</h2>
+          <h4>{planetsData[show].title}</h4>
+          <p>{planetsData[show].description}</p>
+          <p>Distance from the Sun: {planetsData[show].distanceFromSun}</p>
+          <p>Diameter: {planetsData[show].diameter}</p>
+          <p>Gravity: {planetsData[show].gravity}</p>
+          <img src={planetsData[show].image} width='300px' height='300px' alt={planetsData[show].description} />  
+        </div>
+        )}
       </div>
-      )}
     </div>
-
-    </div>
-      
-      
-      </>
-      )
+    </>
+    )
     }
     
     export default App
