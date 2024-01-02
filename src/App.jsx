@@ -13,6 +13,7 @@ function App() {
   
   return (
     <>
+
     <h1>Welcome to the Milky Way</h1>
     <div className='display-items'>
       <div>
@@ -39,11 +40,12 @@ function App() {
           <p>Distance from the Sun: {planetsData[show].distanceFromSun}</p>
           <p>Diameter: {planetsData[show].diameter}</p>
           <p>Gravity: {planetsData[show].gravity}</p>
-          <img src={planetsData[show].image} width='300px' height='300px' alt={planetsData[show].description} />  
+          <img src={planetsData[show].image} width='150px' height='150px' alt={planetsData[show].description} />  
         </div>
         )}
       </div>
     </div>
+
     </>
     )
     }
